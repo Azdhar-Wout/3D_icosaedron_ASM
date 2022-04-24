@@ -1,6 +1,6 @@
 ======= 3D_icosahedron_ASM =======
 
-1. Project
+1. Project\n
 This is a project I had to do for school. 
 The purpose of this project is to draw an icosahedron (polyhedron with 20 faces) in 3D in NASM x86-64 with Linux.
 The faces that are at the back must be hidden. Also, the user must be able to rotate the polyhedron around x, y and z.
