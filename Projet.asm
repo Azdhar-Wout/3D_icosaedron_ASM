@@ -63,6 +63,9 @@ section .data
 event:         times   24   dq 0
 angle:         dd      0
 demiangle:     dd      180
+x0: dd  0.0
+y0: dd  0.0
+z0: dd  0.0
 x1: dd  0.0
 y1: dd  0.0
 z1: dd  0.0
@@ -268,6 +271,9 @@ jmp boucle
 ;############################################ 
 prog_principal:
     calculs_et_dessins:
+        mov r12b
+        mul byte[compteur_face]
+        mov byte[x_ieme_point],r12b
         mov al,4
         mul byte[compteur_face]
         mov byte[x_ieme_point],al
